@@ -1,0 +1,59 @@
+
+#image{
+  display:block;
+  max-width:100%;
+  height:auto;
+  margin:0 auto
+}
+body {
+  background: #f5f6f7;
+  color: #1b1b32;
+  font-family: Helvetica;
+  margin: 0;
+  font-size:16px
+}
+h1{
+  display:block;
+  text-align:center;
+  font-size:2em
+}
+#main{
+  width:80%;
+  margin:0 auto
+}
+#tribute-info{
+text-align:center;
+font-size:1.5em
+}
+#img-caption{
+  font-size:0.8em;
+  text-align:left;
+}
+#topics{
+  margin:0 auto;
+  padding-top:20px;
+  width:80%;
+  min-width:200px
+}
+#topic-caption{
+  font-weight:bold;
+}
+#topics > ul {
+  margin:0;
+  line-height:20px;
+}
+#topics > ul > li {
+  margin:10px 0
+}
+#footer{
+  font-size:12px;
+  text-align:right;  
+  margin-top:50px;
+}
+#footer a{
+  color: #477ca7;
+  text-decoration:underline;
+}
+#footer a:hover{
+  color:red
+}
