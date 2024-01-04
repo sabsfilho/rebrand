@@ -1,0 +1,78 @@
+:root{
+  --back1:lightgray;
+  --back2:darkgray;
+  --back3:black;
+  --back4:linen;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:sans-serif;
+  background:linear-gradient(var(--back1),var(--back3));
+  color:var(--back3);
+  padding-top:5%
+}
+
+h1{
+  padding:20px;
+  text-align:center;
+  font-size:2em;
+  width:100%
+}
+
+#main{
+  border:3px solid var(--back3);
+  border-radius:20px;
+  padding:20px;
+  margin:0 auto;
+  max-width:400px
+}
+
+.blk{
+  padding:5px;
+  border:2px solid var(--back3);border-radius:10px;
+  width:100%;
+margin-bottom:10px;
+background-color:var(--back4);
+  font-size:12px; text-align:center;
+}
+
+#cash{
+  width:150px;
+  font-size:12px;
+  padding:5px;
+  border:1px solid var(--back3);
+  border-radius:10px;
+
+}
+
+#purchase-btn{
+  width:80px;
+  font-size:12px;
+  padding:5px;
+  border:1px solid var(--back3);border-radius:10px;
+  cursor:pointer;
+  color:var(--back3);
+  background-color:var(--back1);
+}
+#purchase-btn:hover{background-color:var(--back2);
+}
+#change-due{
+  min-height:14px;
+  margin:10px 0;
+  font-weight:bold;
+ 
+}
+
+#cash-in-drawer,#change-due{  text-align:left;
+  width:80%;
+  margin:5px auto
+}
+
+#price{   font-weight:bold;
+}
