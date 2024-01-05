@@ -1,0 +1,112 @@
+:root{
+  --back1:darkgreen;
+--back2:yellow;
+--back3:darkgreen;
+--font1:darkred;
+}
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0
+}
+
+body{    
+  padding-top: 5%;
+  padding-left: 20px;
+  padding-right: 20px;
+  background:linear-gradient(var(--back2), var(--back1));
+  font-family:sans-serif;
+}
+h1{
+  font-size:1.5em;
+  text-align:center;
+  padding:20px;
+}
+#main{
+  min-height:200px;
+  border:2px solid var(--back1);
+border-radius:20px;
+margin:0 auto;
+  padding:20px;
+  width:350px
+}
+
+
+.blk{
+  padding:5px;
+  border:2px solid var(--back3);border-radius:10px;
+  width:100%;
+margin-bottom:10px;
+background-color:var(--back4);
+color:var(--font1);
+  font-size:14px; 
+  font-weight:bold;
+  text-align:center;
+}
+
+#search-input{
+  width:200px;
+  font-size:12px;
+  padding:5px;
+  border:1px solid var(--back3);
+  border-radius:10px;
+
+}
+
+#search-button{
+  width:80px;
+  font-size:12px;
+  padding:5px;
+  border:1px solid var(--back3);border-radius:10px;
+  cursor:pointer;
+  color:var(--back2);
+  background-color:var(--back1);
+}
+#search-button:hover{background-color:var(--back2);color:var(--back1);
+}
+#sprite{
+  margin:10px auto;
+  display:block;
+  border:2px solid var(--font1);
+  border-radius:10px
+}
+
+#types{
+  padding:10px;
+}
+
+#types > div {
+  display:inline;
+  background-color:var(--back2);
+  padding:5px;
+  border-radius: 10px;
+  min-width:50px;
+  border:1px solid var(--font1);
+  text-transform:uppercase;
+}
+
+.profile-table{
+  padding:5px 10px
+}
+
+.profile-table > div{
+  text-align:left
+}
+
+.profile-table > div > div{
+  display:inline;
+  text-align:left;
+
+}
+
+.profile-id{
+  padding:10px;
+  display:flex;
+  flex-direction:row;
+}
+
+.sep{
+  display:inline-block;
+  margin:0 10px;
+}
