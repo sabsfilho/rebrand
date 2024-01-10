@@ -7,10 +7,10 @@ certifications
 - Foundational C# with Microsoft - December 11, 2023  
 https://www.freecodecamp.org/certification/sabsfilho/foundational-c-sharp-with-microsoft
 
-- Responsive Web Design - December 28, 2023
+- Responsive Web Design - December 28, 2023  
 https://www.freecodecamp.org/certification/sabsfilho/responsive-web-design
 
-- Javascript Algorithms and Data Structures - January 5, 2024
+- Javascript Algorithms and Data Structures - January 5, 2024  
 https://www.freecodecamp.org/certification/sabsfilho/javascript-algorithms-and-data-structures-v8
 
 profiles
