@@ -1,0 +1,62 @@
+$color01: #43766C;
+$border: #88AB8E;
+$back01: #EEE7DA;
+$back02: #AFC8AD;
+$back03: #F2F1EB;
+$font:sans-serif;
+
+body{
+  font-family: $font;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:$back03
+}
+
+h1{
+  color: $color01;
+  text-align:center;
+}
+
+.box{
+  margin:0 auto;
+  border:2px solid $border;
+  background-color: $back01;
+  border-radius:10px;
+  color: $color01;
+  font-size:14px;
+  padding:0;  
+}
+
+.box > :first-child {
+  color: $back01;
+  background-color:$color01;
+  padding:10px;
+  font-size:16px;
+  font-weight:bold;
+}
+.box > :last-child {
+  padding: 0 10px 10px 10px;
+}
+
+.box textarea{
+  width:400px;
+  max-width:400px;
+  height:200px;
+  border:2px solid $border;
+  margin:0 auto;
+}
+
+.box img{
+  width:200px
+}
+
+.box-editor{
+  width:430px;
+}
+
+.box-previewer{
+  width:700px;
+  margin-top:50px;
+    
+}
