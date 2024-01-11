@@ -1,0 +1,82 @@
+$color01: #43766C;
+$border: #88AB8E;
+$back01: #EEE7DA;
+$back02: #AFC8AD;
+$back03: #F2F1EB;
+$alert: #DF826C;
+$font:sans-serif;
+
+body{
+  font-family: $font;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main{
+  margin: 0;
+  background:linear-gradient($border,$back03);
+  padding:100px 0
+}
+
+h1{
+  color: $color01;
+  text-align:center;
+}
+
+#quote-box{
+  width:300px;
+  margin:0 auto;
+  border:2px solid $border;
+  background-color: $back01;
+  border-radius:10px;
+  color: $color01;
+  font-size:14px;
+  padding:20px;
+}
+
+.btns{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap:20px;
+  justify-content: space-around;
+  margin-top:40px
+}
+
+.btn{
+  width:120px;
+  display:block;
+  padding:10px 0;
+  text-align:center;
+  margin:5px;
+  border:2px solid $border;
+  background-color: $back02;
+  border-radius:10px;
+  color: $color01;
+  font-weight:bold;
+  font-size:14px;
+  text-decoration:none;
+}
+
+.btn:hover{
+  opacity:0.8;
+}
+
+.loading{
+  font-size:20px;
+  padding:50px;
+  color:$alert;
+  font-weight: bold;
+}
+
+#text{
+  padding:10px 10px 0 10px;
+  font-size:20px;
+  font-style:italic;
+}
+
+#author{
+  text-align:right;
+  margin-right:10px;
+}

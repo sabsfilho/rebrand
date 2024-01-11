@@ -2,4 +2,4 @@ developed using CodePen
 
 - Random Quote Machine  
 https://codepen.io/sabsfilho/pen/qBvaBwY  
-techs: HTML5, SCSS, JSE6, React, Redux
+techs: HTML5, SCSS, JSE6, React, Babel
