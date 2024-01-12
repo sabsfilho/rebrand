@@ -1,0 +1,64 @@
+$color01: #43766C;
+$border: #88AB8E;
+$back01: #EEE7DA;
+$back02: #AFC8AD;
+$back03: #F2F1EB;
+$font:sans-serif;
+
+body{
+  font-family: $font;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:$back03
+}
+
+h1{
+  color: $color01;
+  text-align:center;
+}
+
+#drum-machine{
+  width:500px;
+  margin:0 auto;
+  border:2px solid $border;
+  background-color: $back01;
+  border-radius:10px;
+  color: $color01;
+  font-size:14px;
+  padding:20px;
+}
+
+.btns{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap:10px;
+  justify-content: space-around;
+}
+
+.drum-pad{
+  display:block;
+  padding:10px;
+  text-align:center;
+  margin:5px;
+  border:2px solid $border;
+  background-color: $back02;
+  border-radius:20px;
+  color: $color01;
+  font-weight:bold;
+  font-size:14px;
+  text-decoration:none;
+  cursor:pointer;
+}
+
+.drum-pad:hover{
+  opacity:0.8;
+}
+
+#display{
+  font-size:20px;
+  font-weight:bold;
+  text-align:center;
+  margin-top:10px
+}
