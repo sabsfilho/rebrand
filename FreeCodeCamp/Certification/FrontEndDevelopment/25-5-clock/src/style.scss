@@ -1,0 +1,172 @@
+$color01: #43766C;
+$border: #88AB8E;
+$back01: #EEE7DA;
+$back02: #AFC8AD;
+$back03: #F2F1EB;
+
+$color02: #638889;
+$color03: #FA7070;
+$back04: #80BCBD;
+$back05: #FFB7B7;
+
+$font:sans-serif;
+
+body{
+  font-family: $font;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main{
+  margin: 0;
+  background:linear-gradient($border,$back03);
+  padding:100px 0;
+  height:100vh
+}
+
+h1{
+  color: $color01;
+  text-align:center;
+}
+
+#clock-box{
+  width:300px;
+  margin:0 auto;
+  border:2px solid $border;
+  background-color: $back01;
+  border-radius:10px;
+  color: $color01;
+  font-size:14px;
+  padding:20px;
+}
+
+.ConfigBlock{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:10px;
+  justify-content: space-around;  
+}
+
+.ConfigBlockSub > :first-child{
+  margin-bottom:5px;
+  font-size:14px;
+  font-weight:bold;
+  text-align:center;
+}
+
+.ConfigBlockSub > :nth-child(2) > :nth-child(2) {
+  background-color:$back03;
+  border:1px solid $border;
+  border-radius:5px;
+  text-align:center;
+  width:40px;
+  margin:0;
+  padding:0;
+  line-height: 30px;
+}
+
+.ConfigBlockSub > :last-child{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap:10px;
+  justify-content: space-around;  
+}
+
+.ConfigBlockSub button{
+  width:30px;
+  height:30px;
+  display:block;
+  padding:0;
+  text-align:center;
+  border:2px solid $border;
+  background-color: $back02;
+  border-radius:30px;
+  color: $color01;
+  font-weight:bold;
+  font-size:20px;
+  text-decoration:none;
+  cursor:pointer
+}
+
+button:hover{
+  opacity:0.8;
+}
+
+.timer-block{
+  text-align:center;
+  margin-top:20px;
+}
+
+#timer-label{
+  font-size:20px;
+}
+
+#time-left{
+  font-size:40px;
+  padding:10px;
+  width:150px;
+  border-radius:20px;
+  margin:0 auto;
+}
+
+.timeLeftSession{
+  background-color:$color01;
+  color:$back01;  
+}
+
+.timeLeftWarn{
+  color: $color03;
+  border:2px solid $color03;
+  background-color: $back05; 
+}
+
+.ControlBlock{
+  display:flex;
+  margin:20px auto;
+  width:220px
+}
+
+.ControlBlock button {
+  margin:0 10px;
+  width:100px;
+  height:30px;
+  display:block;
+  padding:0;
+  text-align:center;
+  border-radius:10px;
+  font-weight:bold;
+  font-size:20px;
+  text-decoration:none;
+  cursor:pointer;
+}
+
+.start{    
+  color: $color01;
+  border:2px solid $color01;
+  background-color: $back04;  
+}
+
+.stop{    
+  color: $color03;
+  border:2px solid $color03;
+  background-color: $back05;  
+}
+
+.reset{    
+  border:2px solid $border;
+  background-color: $back02;
+  color: $color01;
+}
+
+.tags{
+  color: $color01;
+  display:fixed;
+  font-size:12px;
+  text-align:right;
+  margin-bottom:0;
+  margin-right:20px;
+  font-weight:bold;
+}

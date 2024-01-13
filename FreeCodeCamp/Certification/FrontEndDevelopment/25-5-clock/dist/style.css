@@ -1,0 +1,159 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  margin: 0;
+  background: linear-gradient(#88AB8E, #F2F1EB);
+  padding: 100px 0;
+  height: 100vh;
+}
+
+h1 {
+  color: #43766C;
+  text-align: center;
+}
+
+#clock-box {
+  width: 300px;
+  margin: 0 auto;
+  border: 2px solid #88AB8E;
+  background-color: #EEE7DA;
+  border-radius: 10px;
+  color: #43766C;
+  font-size: 14px;
+  padding: 20px;
+}
+
+.ConfigBlock {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.ConfigBlockSub > :first-child {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ConfigBlockSub > :nth-child(2) > :nth-child(2) {
+  background-color: #F2F1EB;
+  border: 1px solid #88AB8E;
+  border-radius: 5px;
+  text-align: center;
+  width: 40px;
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+}
+
+.ConfigBlockSub > :last-child {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.ConfigBlockSub button {
+  width: 30px;
+  height: 30px;
+  display: block;
+  padding: 0;
+  text-align: center;
+  border: 2px solid #88AB8E;
+  background-color: #AFC8AD;
+  border-radius: 30px;
+  color: #43766C;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.timer-block {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#timer-label {
+  font-size: 20px;
+}
+
+#time-left {
+  font-size: 40px;
+  padding: 10px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.timeLeftSession {
+  background-color: #43766C;
+  color: #EEE7DA;
+}
+
+.timeLeftWarn {
+  color: #FA7070;
+  border: 2px solid #FA7070;
+  background-color: #FFB7B7;
+}
+
+.ControlBlock {
+  display: flex;
+  margin: 20px auto;
+  width: 220px;
+}
+
+.ControlBlock button {
+  margin: 0 10px;
+  width: 100px;
+  height: 30px;
+  display: block;
+  padding: 0;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.start {
+  color: #43766C;
+  border: 2px solid #43766C;
+  background-color: #80BCBD;
+}
+
+.stop {
+  color: #FA7070;
+  border: 2px solid #FA7070;
+  background-color: #FFB7B7;
+}
+
+.reset {
+  border: 2px solid #88AB8E;
+  background-color: #AFC8AD;
+  color: #43766C;
+}
+
+.tags {
+  color: #43766C;
+  display: fixed;
+  font-size: 12px;
+  text-align: right;
+  margin-bottom: 0;
+  margin-right: 20px;
+  font-weight: bold;
+}
