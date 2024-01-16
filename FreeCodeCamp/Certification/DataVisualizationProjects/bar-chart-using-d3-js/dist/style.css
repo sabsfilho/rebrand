@@ -1,0 +1,23 @@
+h1{
+  font-size:14px;
+  font-style:italic
+}
+.bar:hover {
+  fill: brown;
+}
+#title{
+  text-align: center;
+  position:relative;
+  top:-20px;
+  font-size:20px
+}
+#tooltip{
+  position:absolute;
+  border:2px solid darkgray;
+  background-color: linen;
+  border-radius:20px;
+  text-align:center;
+  max-width:120px;
+  padding:10px;
+    
+}
