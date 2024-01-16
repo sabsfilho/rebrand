@@ -1,0 +1,39 @@
+#chart{
+  margin:50px;
+  padding:20px;
+  border:2px solid darkgray;
+  border-radius:20px
+}
+.title{
+  font-family: sans-serif;
+  font-size:24px;
+  font-weight:bold;
+  text-align:center;
+  padding-bottom:20px  
+}
+.legend-text{
+  font-family: sans-serif;
+  font-size:14px
+}
+#tooltip{
+  position:absolute;
+  border:2px solid darkgray;
+  background-color: linen;
+  border-radius:20px;
+  text-align:left;
+  max-width:300px;
+  padding:10px;    
+}
+#tooltip em{
+  display:block;
+  margin:10px 0
+}
+#tooltip a{
+  display:block;
+  color:navy;  
+  cursor:pointer;
+  margin-top:10px
+}
+#tooltip a:hover{
+  color:darkred
+}
