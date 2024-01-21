@@ -4,3 +4,8 @@ gitlab.com
 
 palette
 https://colorhunt.co/palette/88ab8eafc8adeee7daf2f1eb
+
+
+If you're not making bugs, then you're not programming.
+
+https://github.com/epilot-dev/engineering-principles
