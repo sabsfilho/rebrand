@@ -30,8 +30,16 @@ https://learn.microsoft.com/en-us/users/samuelsantos-1448/
 - HackerRank  
 https://www.hackerrank.com/profile/sabsfilho
 
+- CodePen  
+https://codepen.io/sabsfilho
+
+jobs  
+- CodeAlly  
+https://codeally.io/cv/1925e7e676abb9663fe62f5e
+
 source paths
 - freecodecamp
 - microsoft
 - aws
+- codepen
 - youtube
