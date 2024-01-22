@@ -7,5 +7,6 @@ https://colorhunt.co/palette/88ab8eafc8adeee7daf2f1eb
 
 
 If you're not making bugs, then you're not programming.
+It is not the strongest of the species that survive, nor the most intelligent, but the one most responsive to change.
 
 https://github.com/epilot-dev/engineering-principles

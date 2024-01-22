@@ -1,0 +1,50 @@
+touch = create
+put #!/bin/bash in file at first
+sh = run
+bash = bourne-again shell
+ls -l = list with permissions
+ls /bin = list binary system directory
+chmod +x file = give write permission to file
+echo $v = print v content
+read = read variable input from user
+man [cmd]= manual opens help for cmd
+type psql = location of psql
+
+if [[ $1 == arg1 ]]
+then
+    echo true
+elif [[ $1 == arg1 ]]
+then
+   echo 2
+else
+    echo false
+fi
+if with -eq (equal), -ne (not equal), -lt (less than), -le (less than or equal), -gt (greater than), -ge (greater than or equal)
+
+for (( i = 10; i > 0; i-- ))
+do
+  echo $i
+done
+
+I=$1
+while [[ $I -ge 0 ]]
+do
+  echo $I
+  (( I-- ))
+  sleep 1
+done
+
+until [[ CONDITION ]]
+do
+  STATEMENTS
+done
+
+declare -p J = print J value
+
+echo $(( RANDOM % 75 + 1)) = print random value from 1 to 75
+
+
+FUNCTION_NAME() {
+  STATEMENTS
+}
+
