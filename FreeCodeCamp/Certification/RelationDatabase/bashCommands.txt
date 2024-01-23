@@ -1,5 +1,5 @@
 touch = create
-put #!/bin/bash in file at first
+put #!/bin/bash in file at first //shebang
 sh = run
 bash = bourne-again shell
 ls -l = list with permissions
@@ -9,6 +9,7 @@ echo $v = print v content
 read = read variable input from user
 man [cmd]= manual opens help for cmd
 type psql = location of psql
+cp zz.txt qq.txt = copy
 
 if [[ $1 == arg1 ]]
 then
@@ -48,3 +49,10 @@ FUNCTION_NAME() {
   STATEMENTS
 }
 
+
+PSQL="psql -X --username=freecodecamp --dbname=students --no-align --tuples-only -c"
+#read lines from csv file with "," separator // major course are file csv columns
+cat courses.csv | while IFS="," read MAJOR COURSE
+do
+  <STATEMENTS>
+done

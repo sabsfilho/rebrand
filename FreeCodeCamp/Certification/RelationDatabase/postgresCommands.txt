@@ -1,0 +1,24 @@
+postgresql commands
+\l = list databases
+\c students = connect to student database
+\d = list tables
+
+psql --username=freecodecamp --dbname=postgres
+
+create database students;
+create table students(); // create empty table
+
+alter table students add column student_id serial primary key; // add primary key
+alter table majors_courses add primary key(major_id, course_id); // add multi column primary key
+
+alter table students add foreign key(major_id) references majors(major_id); // add foreign key
+
+alter sequence courses_course_id_seq restart with 1; // restart serial counter
+
+truncate students,majors_courses,majors;
+
+#dump database
+pg_dump --clean --create --inserts --username=freecodecamp students > students.sql
+
+USING
+select * from students full join majors using(major_id) full join majors_courses using(major_id);
