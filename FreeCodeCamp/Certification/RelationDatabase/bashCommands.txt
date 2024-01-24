@@ -11,6 +11,8 @@ man [cmd]= manual opens help for cmd
 type psql = location of psql
 cp zz.txt qq.txt = copy
 
+
+
 if [[ $1 == arg1 ]]
 then
     echo true
@@ -56,3 +58,10 @@ cat courses.csv | while IFS="," read MAJOR COURSE
 do
   <STATEMENTS>
 done
+
+name=""
+if [[ -z "$name" ]]; then
+    echo "Name variable is empty"
+else
+    echo "Name variable is not empty"
+fi

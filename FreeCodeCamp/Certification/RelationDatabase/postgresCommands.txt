@@ -22,3 +22,5 @@ pg_dump --clean --create --inserts --username=freecodecamp students > students.s
 
 USING
 select * from students full join majors using(major_id) full join majors_courses using(major_id);
+
+pg_dump -cC --inserts --username=freecodecamp -U postgres worldcup > worldcup.sql
