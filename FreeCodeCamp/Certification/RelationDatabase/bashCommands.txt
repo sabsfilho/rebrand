@@ -10,8 +10,9 @@ read = read variable input from user
 man [cmd]= manual opens help for cmd
 type psql = location of psql
 cp zz.txt qq.txt = copy
-
-
+cat read file and print
+wc = word count print file attributes lines, words, bytes
+wc -l count lines
 
 if [[ $1 == arg1 ]]
 then
@@ -65,3 +66,42 @@ if [[ -z "$name" ]]; then
 else
     echo "Name variable is not empty"
 fi
+
+write
+echo hello bash > stdout.txt
+append
+echo hello bash >> stdout.txt
+
+err
+./script.sh < name.txt 2> stderr.txt
+err & stdout
+./script.sh < name.txt 2> stderr.txt 1>stdout.txt
+
+show lines with meow
+grep --color -n 'meow[a-z]*' kitty_ipsum_1.txt
+count
+grep -c 'meow[a-z]*' kitty_ipsum_1.txt
+show word
+grep -o 'meow[a-z]*' kitty_ipsum_1.txt
+count lines .. wc -l count lines
+grep -o 'meow[a-z]*' kitty_ipsum_1.txt | wc -l
+
+replace r to 2 in name.txt
+sed 's/r/2/' name.txt in the terminal
+
+show lines then replace numbers to 1
+grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed -E 's/[0-9]+/1/'
+
+grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt
+
+number of lines
+cat kitty_ipsum_2.txt | wc -l >> kitty_info.txt
+
+number of words
+wc -w < kitty_ipsum_2.txt >> kitty_info.txt
+
+character count
+wc -m < kitty_ipsum_2.txt >> kitty_info.txt
+
+file difference
+diff --color kitty_ipsum_1.txt doggy_ipsum_1.txt
