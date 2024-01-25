@@ -5,9 +5,13 @@ gitlab.com
 palette
 https://colorhunt.co/palette/88ab8eafc8adeee7daf2f1eb
 
+web site host
+https://glitch.com/
+https://replit.com/
 
 If you're not making bugs, then you're not programming.
 It is not the strongest of the species that survive, nor the most intelligent, but the one most responsive to change.
 you don't end up recreating the wheel
+We should make the complex appear to be simple.
 
 https://github.com/epilot-dev/engineering-principles
