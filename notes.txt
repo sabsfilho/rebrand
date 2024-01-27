@@ -15,3 +15,13 @@ you don't end up recreating the wheel
 We should make the complex appear to be simple.
 
 https://github.com/epilot-dev/engineering-principles
+
+
+https://aws.amazon.com/developer/language/net/badges-and-training/
+
+
+recommended books
+1- Soft Skills by John Sonmez
+2- The One Thing by Gary Keller
+3- The Phoenix Project by Gene Kim , Kevin Behr , George Spafford
+4- The Pragmatic Programmer by David Thomas & Andrew Hunt
