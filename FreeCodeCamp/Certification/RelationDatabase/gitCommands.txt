@@ -1,0 +1,6 @@
+git init
+git checkout -b main
+git add element.sh
+git commit -m "Initial commit"
+git branch ls = list
+git branch -d name = remove branch name

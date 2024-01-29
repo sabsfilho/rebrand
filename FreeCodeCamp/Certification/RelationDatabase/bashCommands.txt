@@ -13,6 +13,10 @@ cp zz.txt qq.txt = copy
 cat read file and print
 wc = word count print file attributes lines, words, bytes
 wc -l count lines
+rm -rf dir_name = remove dir_name not empty
+
+set variable 
+W="e.symbol='$1' or e.name='$1'" !!!!! NO SPACE =
 
 if [[ $1 == arg1 ]]
 then
