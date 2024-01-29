@@ -14,6 +14,7 @@ It is not the strongest of the species that survive, nor the most intelligent, b
 you don't end up recreating the wheel
 We should make the complex appear to be simple.
 Good programmers write code that humans can understand.
+Tough times never last, but tough people do.
 
 https://github.com/epilot-dev/engineering-principles
 

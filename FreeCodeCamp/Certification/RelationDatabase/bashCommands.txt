@@ -67,6 +67,9 @@ done
 name=""
 if [[ -z "$name" ]]; then
     echo "Name variable is empty"
+elif [[ condition ]]
+then
+  commands
 else
     echo "Name variable is not empty"
 fi
