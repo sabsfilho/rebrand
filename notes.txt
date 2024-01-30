@@ -27,3 +27,19 @@ recommended books
 2- The One Thing by Gary Keller
 3- The Phoenix Project by Gene Kim , Kevin Behr , George Spafford
 4- The Pragmatic Programmer by David Thomas & Andrew Hunt
+
+
+
+CI / CD = CYCLE
+
+[CI = CONTINUOUS INTEGRATION]
+#1 = PLAN [SLICE]
+#2 = IMPLEMENT [CODE & MERGE]
+#3 = BUILD [DEV_ENVIRONMENT+INTEGRATION]
+#4 = TEST [STAGE_ENVIRONMENT] / BACK TO STEP #1
+[CD - CONTINOUS DELIVERY]
+#5 = RELEASE [PACK WITH DOC]
+#6 = DEPLOY [PUBLISH]
+#7 = OPERATE [PUT WORKING]
+#8 = MONITOR [PROD_ENVIRONMENT]
+#9 = BACK TO STEP #1
