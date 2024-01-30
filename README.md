@@ -5,6 +5,9 @@ Purpose of this project is to keep documents, codes, annotations, certifications
 
 certifications  
 
+- Relation Database Certification - January 29, 2024  
+https://www.freecodecamp.org/certification/sabsfilho/relational-database-v8
+
 - Data Visualization Certification - January 17, 2024  
 https://www.freecodecamp.org/certification/sabsfilho/data-visualization
 
