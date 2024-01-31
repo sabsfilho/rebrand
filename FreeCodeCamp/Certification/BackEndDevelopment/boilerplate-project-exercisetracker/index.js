@@ -33,13 +33,19 @@ const User = mongoose.model("User", userSchema);
 app.post("/api/users", async (req, res) => {
   const username = req.body.username;
 
-  let u = await User.findOne({ username: username });
-  if (!u) {
-    u = await new User({
-      username: username,
-    }).save();
+  if (username){
+    let u = await User.findOne({ username: username });
+    if (!u) {
+      u = await new User({
+        username: username,
+      }).save();
+    }
+    res.send(u);
   }
-  res.send(u);
+  else {
+    const us = await MyModel.find({});
+    res.send(us);    
+  }
 });
 
 const exerciseSchema = new Schema({
@@ -73,7 +79,7 @@ app.get("/api/users/:_id/logs", async (req, res) => {
   if (!u) {
     res.send("User not found");
   } else {
-    const exercises = await Exercise.find({ username: u.username });
+    let exercises = await Exercise.find({ username: u.username });
     if (!exercises || exercises.length === 0) {
       res.send("Exercises not found");
     } else {
@@ -90,15 +96,16 @@ app.get("/api/users/:_id/logs", async (req, res) => {
       if (limit) {
         exercises = exercises.slice(0, limit);
       }
+      exercises = exercises.map((exercise) => ({
+        description: exercise.description,
+        duration: exercise.duration,
+        date: exercise.date.toDateString(),
+      }));
       res.json({
         username: u.username,
         count: exercises.length,
         _id: u._id,
-        log: exercises.map((exercise) => ({
-          description: exercise.description,
-          duration: exercise.duration,
-          date: exercise.date.toDateString(),
-        }))
+        log: exercises
       });
     }
   }
