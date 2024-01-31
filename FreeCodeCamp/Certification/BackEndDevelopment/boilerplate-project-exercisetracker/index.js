@@ -30,22 +30,20 @@ const userSchema = new Schema({
 
 const User = mongoose.model("User", userSchema);
 
+app.get('/api/users', async (req, res) =>{
+  const us = await User.find({});
+  res.send(us);  
+});
+
 app.post("/api/users", async (req, res) => {
   const username = req.body.username;
-
-  if (username){
-    let u = await User.findOne({ username: username });
-    if (!u) {
-      u = await new User({
-        username: username,
-      }).save();
-    }
-    res.send(u);
+  let u = await User.findOne({ username: username });
+  if (!u) {
+    u = await new User({
+      username: username,
+    }).save();
   }
-  else {
-    const us = await MyModel.find({});
-    res.send(us);    
-  }
+  res.send(u);
 });
 
 const exerciseSchema = new Schema({
@@ -63,12 +61,13 @@ app.post("/api/users/:_id/exercises", async (req, res) => {
     res.send("User not found");
   } else {
     const date = req.body.date;
-    const exercise = await new Exercise({
+    const exercise = {
       username: u.username,
       description: req.body.description,
       duration: req.body.duration,
       date: date ? new Date(date) : new Date(),
-    }).save();
+    };
+    await new Exercise(exercise).save();
     exercise._id = u._id;
     res.send(exercise);
   }
