@@ -69,6 +69,7 @@ app.post("/api/users/:_id/exercises", async (req, res) => {
     };
     await new Exercise(exercise).save();
     exercise._id = u._id;
+    exercise.date = exercise.date.toDateString();
     res.send(exercise);
   }
 });
