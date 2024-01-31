@@ -60,18 +60,20 @@ app.get("/api/users/:_id/exercises", async (req, res) => {
   if (!u) {
     res.send("User not found");
   } else {
-    const exercises = await Exercise.find({ username: u.username });
+    let exercises = await Exercise.find({ username: u.username });
     if (!exercises || exercises.length === 0) {
       res.send("Exercises not found");
     } else {
-      const exercise = exercises[0];
-      res.json({
-        username: u.username,
-        _id: u._id,
-        description: exercise.description,
-        duration: exercise.duration,
-        date: exercise.date.toDateString(),
-      });
+      exercises = exercises.map(exercise => (
+        {
+          username: u.username,
+          _id: u._id,
+          description: exercise.description,
+          duration: exercise.duration,
+          date: exercise.date.toDateString(),
+        }
+      ))
+      res.json(exercises)
     }
   }
   
