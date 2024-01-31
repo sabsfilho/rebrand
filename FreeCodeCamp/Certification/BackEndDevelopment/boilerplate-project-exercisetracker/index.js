@@ -55,30 +55,6 @@ const exerciseSchema = new Schema({
 
 const Exercise = mongoose.model("Exercise", exerciseSchema);
 
-app.get("/api/users/:_id/exercises", async (req, res) => {
-  const u = await User.findById(req.params._id);
-  if (!u) {
-    res.send("User not found");
-  } else {
-    let exercises = await Exercise.find({ username: u.username });
-    if (!exercises || exercises.length === 0) {
-      res.send("Exercises not found");
-    } else {
-      exercises = exercises.map(exercise => (
-        {
-          username: u.username,
-          _id: u._id,
-          description: exercise.description,
-          duration: exercise.duration,
-          date: exercise.date.toDateString(),
-        }
-      ))
-      res.json(exercises)
-    }
-  }
-  
-});
-
 app.post("/api/users/:_id/exercises", async (req, res) => {
   const u = await User.findById(req.params._id);
   if (!u) {
@@ -91,10 +67,16 @@ app.post("/api/users/:_id/exercises", async (req, res) => {
       duration: req.body.duration,
       date: date ? new Date(date) : new Date(),
     };
+    
     await new Exercise(exercise).save();
-    exercise._id = u._id;
-    exercise.date = exercise.date.toDateString();
-    res.send(exercise);
+    
+    return res.json({
+      _id: u._id,
+      username: u.username,
+      date: exercise.date.toDateString(),
+      duration: parseInt(exercise.duration),
+      description: exercise.description
+    });
   }
 });
 
