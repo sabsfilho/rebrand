@@ -43,3 +43,48 @@ CI / CD = CYCLE
 #7 = OPERATE [PUT WORKING]
 #8 = MONITOR [PROD_ENVIRONMENT]
 #9 = BACK TO STEP #1
+
+MERN = MongoDB, Express, React, Node
+MEAN = MongoDB, Express, Angular, Node
+
+AI MOCK INTERVIEW
+https://www.talkberry.ai/mock-interview
+
+FREELANCE
+https://www.upwork.com/freelance-jobs/?cat=dev-it
+
+QUESTIONS
+https://www.upwork.com/hire/full-stack-developers/interview-questions/
+
+https://www.upwork.com/resources/virtual-team-communication-best-practices
+
+
+Standardize project roles with DACI and RACI
+Knowing when to schedule a project-based meeting is only part of the productivity equation. It’s also very important to know who truly needs to attend a meeting. Otherwise, you may have too many people spending time sitting quietly in meetings instead of focusing on their own essential projects.
+
+DACI and RACI are two frameworks that are very helpful for establishing who needs a meeting invite.
+
+DACI stands for:
+
+Driver: Who will guide the team toward a decision?
+Approver: Who has the final say?
+Contributor: Who is involved in working on this project?
+Informed: Who will receive updates after each meeting?
+Similarly, RACI stands for:
+Responsible: Which team member is in charge of the project?
+Accountable: Who will you rely on for this project?
+Consulted: Which team members need to give input on the project?
+Informed: Who will receive notifications about project updates?
+Whether you prefer to use DACI or RACI labels, results of implementing each framework are similar:
+
+Drivers and responsible parties organize meetings
+Contributors and consulted team members attend and provide input
+Accountable partners or approvers sign off on decisions
+Informed team members get an update after the meeting concludes
+
+
+https://www.taskade.com/generate/personas/developer-persona
+
+https://www.c-sharpcorner.com/UploadFile/bd5be5/design-patterns-in-net/
+
+https://roadmap.sh/
