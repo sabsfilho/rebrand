@@ -1,3 +1,4 @@
+Bourne Again Shell (BASH)
 touch = create
 put #!/bin/bash in file at first //shebang
 sh = run

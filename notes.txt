@@ -83,8 +83,67 @@ Accountable partners or approvers sign off on decisions
 Informed team members get an update after the meeting concludes
 
 
+COPILOT OPINION
+Although I have over 25 years of coding, I'd rather prefer to head to documentation and Stack Overflow and find a better way for a solution reading the comments and benchmarks, than use a machine auto generated code.
+I still like to learn !
+
+Though we have to be adaptive and search for new stuff, I used Co-Pilot a few times to give it a chance. It was an amazing and fun experience at the beginning but started to be annoying because it failed to point out a few important things and in the end I did a better job by myself using the old stuff.
+
+I think it's a great tool for generating unit tests and using very well established patterns. 
+It saves a lot of time/money for repetitive tasks and on writing boilerplate.
+But we need to be more careful using this tool because we can be lazy sometimes and not be able to see bugs it may introduce in our code.
+By the way, we can do repetitive tasks and boilerplate chunks, using copy and paste from a tested and well formed code that has been written before in our library or even somewhere else in Stackoverflow.
+
+So, I will try it out again next year.
+
 https://www.taskade.com/generate/personas/developer-persona
 
 https://www.c-sharpcorner.com/UploadFile/bd5be5/design-patterns-in-net/
 
 https://roadmap.sh/
+
+
+https://www.techtarget.com/searchapparchitecture/tip/Functional-vs-object-oriented-programming-The-basics
+
+
+Proof of Concept (POC) in Software Development
+In software development, a proof of concept is used to establish if it’s viable to create a piece of software. To do so, development teams must establish who needs this software, what problems would it solve, what’s needed to develop it from a resource standpoint and whether it’s technically feasible to create it.
+
+The software development team will brainstorm and interview potential users to better understand what the software should be like. In addition, just as when creating any product, the team should look into the existing solutions that competitors offer. These findings will then be put into a proof of concept document that’ll explain whether the software should be created by explaining its technical feasibility, business impact and potential to succeed in the market.
+
+Proof of Concept vs. Minimum Viable Product (MVP)
+A minimum viable product (MVP) is an improved version of your product prototype. Simply put, a minimum viable product has only the basic features that your users would need to have an idea of what your product is like and what it does.
+
+Proof of Concept vs. Prototype
+Creating prototypes is another important exercise. The creation of prototypes is done to help visualize how a product will function in the real world. It shows the design, navigation, layout, etc. Therefore, a proof of concept shows that a product idea can be made, and the prototype shows how it’s made.
+
+SDLC – The Software Development Life Cycle
+https://www.projectmanager.com/blog/sdlc-the-software-development-life-cycle
+
+
+
+https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#using-emojis
+
+
+
+Pull request	Request for review of changes to a repository
+Merge Request	Other name for “pull request”
+Repository Fork	Copy of a repository that you manage
+Repository Clone	Local version of a hosted repository (e.g. Github, Gitlab)
+https://www.jcchouinard.com/github-forks-and-pull-requests/#:~:text=A%20fork%20is%20a%20copy,can%20modify%20the%20original%20repository.
+
+
+
+
+
+[ track branches using submodule ]
+# add submodule to track branch_name branch
+git submodule add -b branch_name URL_to_Git_repo optional_directory_rename
+git submodule add --name rebrand https://github.com/sabsfilho/rebrand.git
+git submodule set-url origin git@github.com:sabsfilho/rebrand.git
+
+# update your submodule
+git submodule update --remote 
+https://www.vogella.com/tutorials/GitSubmodules/article.html
+
+git remote set-url origin git@github.com:sabsfilho/rebrand.git
