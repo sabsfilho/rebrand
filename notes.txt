@@ -52,6 +52,7 @@ https://www.talkberry.ai/mock-interview
 
 FREELANCE
 https://www.upwork.com/freelance-jobs/?cat=dev-it
+https://distantjob.com/apply/
 
 QUESTIONS
 https://www.upwork.com/hire/full-stack-developers/interview-questions/
@@ -135,7 +136,7 @@ https://www.jcchouinard.com/github-forks-and-pull-requests/#:~:text=A%20fork%20i
 
 
 
-
+https://git-scm.com/docs/git-submodule
 [ track branches using submodule ]
 # add submodule to track branch_name branch
 git submodule add -b branch_name URL_to_Git_repo optional_directory_rename
@@ -146,4 +147,10 @@ git submodule set-url origin git@github.com:sabsfilho/rebrand.git
 git submodule update --remote 
 https://www.vogella.com/tutorials/GitSubmodules/article.html
 
+git pull https://github.com/sabsfilho/rebrand.git
 git remote set-url origin git@github.com:sabsfilho/rebrand.git
+
+
+digital by design
+https://shopify.engineering/a-software-engineers-guide-to-working-across-time-zones
+https://www.shopify.com/careers?itcat=EngBlog&itterm=CCTA-DD&shpxid=84666bbe-D7AF-4943-F59C-F44C9ECD465B
