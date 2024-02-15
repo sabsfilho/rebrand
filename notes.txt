@@ -1,5 +1,5 @@
 tool
-Continous Integration / Continuous Delivery > CI / CD
+Continuous Integration / Continuous Delivery > CI / CD
 gitlab.com
 
 palette
@@ -154,3 +154,11 @@ git remote set-url origin git@github.com:sabsfilho/rebrand.git
 digital by design
 https://shopify.engineering/a-software-engineers-guide-to-working-across-time-zones
 https://www.shopify.com/careers?itcat=EngBlog&itterm=CCTA-DD&shpxid=84666bbe-D7AF-4943-F59C-F44C9ECD465B
+
+
+
+https://grow.google/certificates/interview-warmup/interview-tips/
+https://grow.google/certificates/#?modal_active=none
+
+
+entrepreneurship Adventures = teleprompter, casar É fácil, bomdeclick, homenzinho
